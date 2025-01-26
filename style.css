@@ -1,0 +1,250 @@
+:root {
+    --cor-primaria: #03346E;  /* azul*/
+    --cor-secundaria: #E2DAD6; /*cinza*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E2DAD6;
+}
+
+.menu {
+    top:0;
+    position: fixed;
+    width: 100%;
+    background-color: #E2DAD6
+}
+
+.menu a {
+    color: #021526;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica,Arial, sans-serif;
+    height: 80px;
+    border-bottom: 2px solid #021526;
+}
+
+.nav-lista {
+    list-style: none;
+    display: flex;
+}
+
+.nav-lista li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+main {
+    height: 92vh;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: system-ui, -apple-system, Helvetica,Arial, sans-serif;
+    margin-top: 30vh;
+}
+
+
+#sobre-mim {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#sobre-mim p {
+    color: #021526;
+    font-size: 3vh;
+    width: 60vw;
+    letter-spacing: 2px;
+}
+
+#sobre-mim strong {
+    color :#03346E;
+}
+
+#habilidades {
+    margin-top: 7%;
+    height: 400px;
+}
+
+#habilidades ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+#habilidades li {
+    background-color: #03346E;
+    /*height: 7vh;
+    width: 7vw;*/
+    border-radius: 10px;
+    color: #E2DAD6;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#habilidades li img {
+   /* background-color: #fff;*/
+    height: 7vh;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+#habilidades li span {
+    display:none;
+}
+
+#habilidades li:hover {
+    width:  200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#habilidades li:hover span {
+    display: flex;
+}
+
+.titulos {
+    margin-top: 200px;
+    color: #03346E;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-family: system-ui, -apple-system, Helvetica,Arial, sans-serif;
+}
+
+#projetos {
+    margin-top: 7%;
+    width: 350px;
+    height: 700px;
+    display: flex;
+    border-radius: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #021526;
+    color: #E2DAD6;
+    font-family: system-ui, -apple-system, Helvetica,Arial, sans-serif;
+}
+
+#projetos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#projetos img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+#projetos h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+
+#projetos #nome-jogo {
+    font-weight: bolder;
+    text-transform: uppercase;  
+    letter-spacing: 2px;
+    margin-left: 3px;
+    font-size: 30px;
+}
+
+#projetos p {
+    display: none;
+}
+
+#projetos:hover {
+    width: 650px;
+    transition: 0.5s;
+}
+
+#projetos:hover p{
+    display: inline;
+}
+  
+
+.contatos {
+    color: #03346E;
+    font-family: system-ui, -apple-system, Helvetica,Arial, sans-serif;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    height: 300px;
+    margin-top: 100px;
+}
+
+.contatos ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contatos li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:#021526 solid 3px;
+    border-radius: 20px;
+    width: 500px
+}
+
+.contatos li:hover {
+    background-color: #021526;
+}
+
+.contatos li:hover span {
+    color:#E2DAD6;
+}
+
+.contatos a{
+    color: #021526;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contatos a:hover {
+    opacity: 0.7;
+}
+
+footer {
+    height: 400px;
+}
+
+footer p {
+    font-size: 3px;
+}
